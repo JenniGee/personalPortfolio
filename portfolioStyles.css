@@ -1,0 +1,175 @@
+body {
+  background-color: #F7E1F7;
+  color: #2C496D;
+   font-size: 1.5em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}
+
+@media (max-width: 450px){
+  p {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}
+
+h1, h2, h3 {
+  font-family: 'Courgette', cursive;
+}
+
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ------------- About ------------------------*/
+
+.profilePic {
+  display: block;
+  max-width: 600px;
+  width: 60%;
+  min-width: 250px;
+  margin: 0 auto;
+  border: 5px solid #2C496D;
+  border-radius: 50%;
+}
+
+#About {
+  max-width: 600px;
+  width: 60%;
+  min-width: 250px;
+  margin: 0 auto;
+}
+
+#About p {
+  position: relative;
+  bottom: 20px;
+}
+
+/* ------------- Links------------------------*/
+
+#links {
+  text-align: center;
+}
+
+#links a {
+  padding: 0 20px 0 0;
+  font-size: 1.5em;
+}
+
+#links a:hover {
+  color: #785D7E;
+  transition: .5s ease;
+}
+
+/* ------------- Projects ------------------------*/
+
+#projects {
+  margin: 30px 0 20px 0;
+}
+
+.projectsFlex {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .projectsFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.projectContainer {
+  margin: 20px;
+  position: relative;
+  width: 600px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.projectImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+.projectOverlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  background-color: #785D7E;
+  border-radius: inherit;
+}
+
+.projectContainer:hover .projectOverlay {
+  opacity: 0.9;
+}
+
+.projectTitle, .projectDescription {
+  margin: 10px;
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: inherit;
+  margin: 10px;
+  font-family: 'Courgette', cursive;
+}
+
+/* responsive designs */
+@media (max-width: 600px) {
+  .projectLinks {
+    position: relative;
+    bottom: 30px;
+  }
+
+  .projectTitle {
+    font-size: 0.75em;
+  }
+
+  .projectDescription {
+    font-size: 20px;
+  }
+
+  .projectContainer {
+    width: 400px;
+     margin: 10px;
+
+  }
+}
+
+@media (max-width: 450px) {
+  .projectContainer {
+    width: 300px;
+  }
+
+  .projectDescription {
+    font-size: 15px;
+  }
+}
