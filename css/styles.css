@@ -1,0 +1,244 @@
+/*---------------- COLORS -----------------*/
+/*
+#9C89B8: Glossy Grape HEX
+#8169A5: AA passing Glossy Grape
+156 137 184: Glossy Grape rgb
+
+#D3CBE1: Languid Lavender (aka lighter Glossy Grape)
+211 203 225 RBG
+
+#E9E5F0: Magnolia (light Lavender)
+#271F33: dk purple
+#FAFAFF ghost white
+*/
+
+/*--------------additional CSS---------------*/
+
+
+ .container-color-even {
+  background-color: #FAFAFF;
+}
+
+.container-color-odd {
+  background-color: #E9E5F0;
+}
+
+.img-thumbnail:hover {
+  padding: 0.25rem;
+  background-color: #9C89B8;
+  border: 1px solid #9C89B8;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+  transition: .5s ease;
+}
+
+
+.btn-circle {
+      width: 70px;
+      height: 70px;
+      padding: 10px 16px;
+      border-radius: 35px;
+      text-align: center;
+      font-size: 24px;
+      line-height: 1.85;
+  }
+
+
+@media (max-width: 450px) {
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+}
+
+.mt-100 { /* shifts section so heading will not be hidden by navbar*/
+  position: relative;
+  top: 100px;
+}
+
+.mt-80 {
+  position: relative;
+  top: 80px;
+}
+.mt-60 {
+  position: relative;
+  top: 60px;
+}
+.mt-40 {
+  position: relative;
+  top: 40px;
+}
+.mt-20 {
+  position: relative;
+  top: 20px;
+}
+/*-----------NAVBAR------------*/
+
+#nav h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+}
+@media (max-width: 450px){
+  #nav h2 {
+    font-size: 1.5em;
+  }
+}
+
+#nav a {
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+
+/*----------------- Home ------------------*/
+
+
+.home {
+  width:100%;
+  height:inherit;
+	position:relative;
+  background: url(../img/bg1.1.jpg) no-repeat top center;
+}
+
+@media (max-width: 750px) {
+  .home {
+    width:100%;
+    height:inherit;
+  	position:relative;
+    background: url(../img/bg1.1md.jpg) no-repeat top center;
+  }
+}
+
+
+.overlay {
+  background: rgba(154, 139, 180, 1);
+  background-size: cover;
+}
+
+.slogan {
+  position: absolute;
+  bottom: 175px;
+}
+
+@media (max-width: 450px) {
+  .slogan {
+    position: absolute;
+    bottom: 100px;
+  }
+}
+
+#home h1 {
+  font-size: 4em;
+  font-family: 'Courgette', cursive;
+  font-weight: 500;
+}
+
+
+
+@media (max-width: 450px){
+  #home h1 {
+    font-size: 3em;
+  }
+  #home h4 {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 350px){
+  #home h1 {
+    font-size: 2em;
+  }
+}
+
+
+/*----------------Works ---------------------- */
+/*---------------Web design ------------------ */
+
+#works h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: 'Courgette', cursive;
+}
+
+#works h4, #works a {
+  font-family: 'Courgette', cursive;
+}
+@media (min-width: 1400px) {
+  #works h4 {
+    font-size: 2rem;
+  }
+  #works p, #works a {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 450px) {
+  #works h4 {
+    font-size: 1rem;
+  }
+   #works p, #works a {
+     font-size: 0.85rem;
+   }
+}
+
+.projectContainer {
+  position: relative;
+  border: none;
+  border-radius: .25rem;
+  color: #fff;
+}
+
+.projectOverlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  background-color: #8169A5;
+  border-radius: inherit;
+}
+
+.projectContainer:hover .projectOverlay {
+  opacity: 0.9;
+}
+
+.projectTitle, .projectDescription {
+  margin: 10px 10px 0 10px;
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: center;
+}
+
+/*=---------ABOUT--------------*/
+
+@media (min-width:1200px) {
+  #about p {
+    font-size: 1.25rem;
+  }
+}
+
+#about h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: 'Courgette', cursive;
+}
+
+/*----------FOOTER--------------*/
+footer {
+  text-align: center;
+  background-color: #8169A5;
+  color: #FAFAFF;
+}
